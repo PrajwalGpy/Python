@@ -1,35 +1,27 @@
-print('if elif else - Exercise')
-# Create a calculator which handles +,-,*,/ and outputs answer based on the mode/ operator used
-# Hint: use 3 separate inputs 
-# Bonus: Extend functionality with extra mode so it also does celsius to fahrenheit conversion
-# formula is: temp in C*9/5 + 32 = temp in f
+print('Guessing game') 
+# Guess the correct number in 3 guesses. If you don’t get it right after 3 guesses you lose the game. 
+# Give user input box: 1. To capture guesses, 
+# print(and input boxes) 1. If user wins 2. If user loses
+# Tip:( remember you won’t see  print statements durng execution, so If you want to see prints during whle loop, then print to the input box
 
-operater = input("Enter the Opreter ex:(+,-,*,/) : ")
-num1 = int(input("Enetr the first number"))
-if not(operater) == "f":
-    num2 = int(input("enter the Second number"))
+#Modification 1: number 1-100, tell user if guess is too high/low ,and let them have 5-10 guesses.
+# Tip:( remember you won’t see  print statements during execution, so If you want to see prints during whle loop, print to the input box (This is specific to this platform)
+# Three Loop Questions:
+#1. What do I want to repeat?
+#  -> 
+#2. What do I want to change each time?
+#  -> 
+#3. How long should we repeat?
+#  -> 
 
-temp = int(input("enter the Temptecher"))
-if operater == "+":
-    print(num1+num2)
+number = 30
+gessCount =  3
+while gessCount > 0:
+    inputval = int(input("enter an Numeber"))
+    if number == inputval :
+        print("you win ")
 
-elif operater == "-" :
-    print(num1-num2)
-
-elif operater == "*" :
-    print(num1*num2)
-
-elif operater == "/" :
-    if num1 == 0:
-        print("infinite")
     else:
-        print(num1/num2)
+        print("you lose")  
 
-elif operater.lower() == 'f':
-    print(f'{num1} Celsius is equivalent to {(num1*9/5)+32 } fahrenheit')
-    
-else:
-    print("Invalid Choiec Choivce Bwetwen (+,-,*,/) them")
-
-tempF = temp*9/5+32
-print(f"the temprecger to faernhite is {tempF}")
+    gessCount = gessCount -1
