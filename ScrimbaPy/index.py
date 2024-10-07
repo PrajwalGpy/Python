@@ -160,14 +160,65 @@
 # print(freind1)
 
 
-sales_w1 = [7,3,42,19,15,35,9]
-sales_w2 = [12,4,26,10,7,28]
-sales = []
+# sales_w1 = [7,3,42,19,15,35,9]
+# sales_w2 = [12,4,26,10,7,28]
+# sales = []
 
-w2_add_day = int(input("add an list value : "))
-sales_w1.extend(sales_w2)
-sales = sales_w1[:]
-print(sales)
-print(f"The best day {max(sales)}")
-print(f"The worst day {min(sales)}")
-print(f"The total day {sum(sales)}")
+# w2_add_day = int(input("add an list value : "))
+# sales_w1.extend(sales_w2)
+# sales = sales_w1[:]
+# print(sales)
+# print(f"The best day {max(sales)}")
+# print(f"The worst day {min(sales)}")
+# print(f"The total day {sum(sales)}")
+
+# msg ='Welcome  to  Python  101: Split  and Join'
+# csv = 'Eric,John,Michael,Terry,Graham'
+# friends_list = ['Eric','John','Michael','Terry','Graham']
+# print(''.join(friends_list))
+
+# print(msg.split("c"))
+
+
+# csv = 'Eric,John,Michael,Terry,Graham:TerryG;Brian'
+# friends_list = ",".join(",".join(csv.split(";")).split(":")).split(",")
+# print(friends_list)
+# print(((csv.replace(":",",")).replace(";",",")).split(","))
+# # From the list above fill a list(friends_list) properly
+# # with the names of all the friends. One per "slot"
+# # you may need to run same command several times
+# # use print() statements to work your way through the exercise
+
+# # friends_list.extend(csv)
+# # print(friends_list)
+
+# goo = ["jjjj","hhhhhh","llllllll","hhhhhhh","sgsgsgs","llllllll"]
+# goo1 = ("jjjj","hhhhhh","llllllll","hhhhhhh","sgsgsgs","llllllll")
+# goo2 = {"jjjj","hhhhhh","llllllll","hhhhhhh","sgsgsgs","llllllll"}
+# gp = {"jjjj","hhhhhh","llllllll","hhhhhhh","sgsgsgs","llllllll","77535"}
+# print(goo)
+# print(goo1)
+# print(goo2)
+
+# print(goo2.union(gp))
+
+
+#Sets - Exercise
+
+#1. Check if ‘Eric’ and ‘John’ exist in friends
+#2. combine or add the two sets 
+#3. Find names that are in both sets
+#4. find names that are only in friends
+#5. Show only the names who only appear in one of the lists
+#6. Create a new cars-list without duplicates
+
+friends = {'John','Michael','Terry','Eric','Graham'}
+my_friends = {'Reg','Loretta','Colin','John','Graham'}
+cars =['900','420','V70','911','996','V90','911','911','S','328','900']
+
+print('Eric' and 'John' in friends)
+print(friends.union(my_friends))
+print(friends.intersection(my_friends))
+print(friends.difference(my_friends))
+clone= set(cars[:])
+print(clone)
