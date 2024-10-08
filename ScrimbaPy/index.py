@@ -212,13 +212,220 @@
 #5. Show only the names who only appear in one of the lists
 #6. Create a new cars-list without duplicates
 
-friends = {'John','Michael','Terry','Eric','Graham'}
-my_friends = {'Reg','Loretta','Colin','John','Graham'}
-cars =['900','420','V70','911','996','V90','911','911','S','328','900']
+# friends = {'John','Michael','Terry','Eric','Graham'}
+# my_friends = {'Reg','Loretta','Colin','John','Graham'}
+# cars =['900','420','V70','911','996','V90','911','911','S','328','900']
 
-print('Eric' and 'John' in friends)
-print(friends.union(my_friends))
-print(friends.intersection(my_friends))
-print(friends.difference(my_friends))
-clone= set(cars[:])
-print(clone)
+# print('Eric' and 'John' in friends)
+# print(friends.union(my_friends))
+# print(friends.intersection(my_friends))
+# print(friends.difference(my_friends))
+# clone= set(cars[:])
+# print(clone)
+
+#Function
+
+
+
+# def Greeting(name,age=22):
+#     print(f"hiii {name}, you are {age} old!")
+    
+
+# name= input("enter your name : ")
+# age = input("enter your age : ")
+
+# Greeting(name,age)
+# Greeting("gggggg")
+
+# def greeting(name, age=28,color="red"):
+#     #Greets user with 'name' from 'input box' and 'age', if available, default age is used
+#     print('Hello '  +  name + ', you will be ' + str(age+1) +'years old next birthday')
+#     print(f'Hello {name.capitalize()}, you are {age}!')
+#     print(f'We hear you like the color {color.lower()}! xxx is a string with color')
+
+# name = input('Enter your name: ')
+# age = input('Enter your age: ')
+# color = input('Enter your color: ')
+# greeting(name, 32,color)
+# # 1. Add new print statement - on a new line
+# #    which says 'We hear you like the color xxx! xxx is a string with color 
+# # 2. extend the function with another  input parameter 'color', that defaults to 'red'
+# # 3. Capture the color via an input box as variable:color 
+# # 4. Change the 'You are xx!' text to say 'you will be xx+1 years old next birthday 
+# #  adding 1 to the age
+# # 5. Capitalize first letter of the 'name', and rest are small caps 
+# # 6. Favorite color should be in lowercase 
+
+
+# if/Else/elif
+
+# def num_days(month):
+
+#     if month in ['jan','mar','may','jul','aug','oct','dec']:
+#         print('number of days in',month,'is',31)
+#     elif month in ['apr','jun','sep','nov']:
+#         print('number of days in',month,'is',30)
+#     else :
+#         print('number of days in',month,'is',28)    
+        
+# num_days('feb')
+# # optimize/shorten the code in the function
+# # try to reduce the number of conditionals 
+
+# print("1.*Loops are great*")
+# print("2.**Loops are great**")
+# print("3.***Loops are great***")
+# print("4.****Loops are great****")
+# print("5.*****Loops are great*****")
+
+
+# loops
+# i=0
+# while i<=5 :
+#     print(f"{i}.{i*"*"}Loops are great{i*"*"}")
+#     i=i+1
+
+# print('Guessing game') 
+# Guess the correct number in 3 guesses. If you don’t get it right after 3 guesses you lose the game. 
+# Give user input box: 1. To capture guesses, 
+# print(and input boxes) 1. If user wins 2. If user loses
+# Tip:( remember you won’t see  print statements durng execution, so If you want to see prints during whle loop, then print to the input box
+
+#Modification 1: number 1-100, tell user if guess is too high/low ,and let them have 5-10 guesses.
+# Tip:( remember you won’t see  print statements during execution, so If you want to see prints during whle loop, print to the input box (This is specific to this platform)
+# Three Loop Questions:
+#1. What do I want to repeat?
+#  -> 
+#2. What do I want to change each time?
+#  -> 
+#3. How long should we repeat?
+#  -> 
+
+# theVlaue = 45
+# i=1
+# while i<=3:
+#     useVlaue = int(input(f"Enter the  number {i}. chance : "))
+#     if useVlaue == theVlaue :
+#         print("You are Right")
+#         break
+    
+#     elif useVlaue>theVlaue:
+#         print("your value is too high")
+#     elif  useVlaue<theVlaue:
+#         print("your value is too low")
+
+#     if i==3 and   useVlaue != theVlaue :
+#         print("you lose  all chances")    
+#     print(f"{3-i} chance remaning")
+#     i+=1    
+
+#loops 
+
+# fri = ['jan', 'mar', 'may', 'jul', 'aug', 'oct', 'dec']
+# for friends in fri:
+#     if friends == "mar":
+#         continue
+#     print(friends, fri.index(friends))
+
+# names = ['john ClEEse','Eric IDLE','michael']
+# names1 = ['graHam chapman', 'TERRY', 'terry jones']
+
+# for name in range(2):
+#     names1e = input("Enter the name : ")
+#     names1.append(names1e)
+
+# print(names1)
+# names.extend(names1)
+
+# for invitation in names:
+#   
+#   print(f"{invitation.title()}! you are invited to the party on saturday.")
+
+
+
+# Disctionery
+
+# profile = {
+#     "name" : "Prajwal",
+#     "age" : 20 ,
+#     "city" : "kundapura"
+# }
+# print(profile.items())
+# print(profile.values())
+# print(profile.keys())
+
+# for key,value in profile.items() :
+#     print(key,value)
+
+#It’s...not really an adventure game...#Ver 1.0
+#Your village is being attacked by 'a germanic tribe' and you need to run to the stores and get the right things to save your village, and probably some good looking girl or boy you want to marry. All prices in gold pieces excl. VAT... chop chop!! ze germanz are coming!
+#The code should allow you to get 1 thing from each store and each item you get should be removed from the store inventory, then do same for next store...
+# one way to buy by typing the key 'newt' in an input box...or something
+# at end you should print the 'items' you have taken..in this version you don't have to pay for stuff or add it up
+#ver 1.2 add ability to exit a store without buying and go to next by typing 'exit', and to exit if a nonexistant item is bought(typed)
+#Add purse with 1000 gold pieces and payment for the items during or at end of code and show a message about total cost and how much gold you have left
+#ver 1.4 random bug fix, ' browser compatability', refactoring code... basically being lazy ..stop scrolling TikTok/Facebook! ;-)
+#Ver 1.5 print inventory before and after purchases as one department_store of stuff(combine inventories from all stores into one...pretend Big Biz bought all the local stores, and want constant reporting for inventory management...)
+# as in all games there is a special way to do this that actually makes money and solves the problem...can you find 'them'? Do you know why? May require knowledge of actual python 'lore'
+
+#create stores
+# freelancers = {'name': 'freelancing Shop', 'brian': 70, 'black knight': 20, 'biccus diccus': 100, 'grim reaper': 500, 'minstrel': -15}
+# antiques = {'name': 'Antique Shop', 'french castle': 400, 'wooden grail': 3, 'scythe': 150, 'catapult': 75, 'german joke': 5}
+# pet_shop = {'name': 'Pet Shop', 'blue parrot': 10, 'white rabbit': 5, 'newt': 2}
+
+# names = []
+
+# # Add the stores to the list
+# for store in (freelancers, antiques, pet_shop):
+#     names.append(store)
+
+# # Create an empty shopping cart
+# cart = {}
+
+# # Loop through stores/dictionaries
+# for shop in names:
+#     while True:  # Loop to allow multiple purchases from each shop
+#         # Show items available in the shop
+#         available_items = {key: value for key, value in shop.items() if key != 'name'}
+#         buy_item = input(f"Welcome to {shop.get('name')}! What do you want to buy: \n{available_items}\nType 'done' to finish shopping here.\n: ").lower()
+
+#         if buy_item == 'done':
+#             break  # Exit the loop to go to the next shop
+
+#         # Check if the item exists in the shop
+#         if buy_item in available_items:
+#             # Add the item and its price to the cart
+#             cart[buy_item] = available_items[buy_item]
+#             print(f"{buy_item.capitalize()} added to your cart.")
+#         else:
+#             print(f"Sorry, {buy_item} is not available in {shop.get('name')}.")
+
+# # Display the final cart
+# print(f"\nYou purchased {cart}. Today it is all free. Have a nice day of mayhem!")
+
+
+# File reading
+# with open("C:/Users/prajw/OneDrive/Desktop/PyThon/ScrimbaPy/goo.txt","r") as f:
+#     print(f.readline())
+#     print(f.readlines())
+#     print(f.readlines())
+
+# Try/Except, Raise
+# try:
+#     number = int(input("Enter a number: "))
+#     print(10 / number)
+# except ValueError:
+#     print("That's not a valid number!")
+# except ZeroDivisionError:
+#     print("You can't divide by zero!")
+
+
+try:
+    num = input("Enter the number")
+    
+    if num == "a":
+        raise ValueError("Inavlid name")
+    print(num) 
+except ValueError as e:
+    print(e)          
+     
