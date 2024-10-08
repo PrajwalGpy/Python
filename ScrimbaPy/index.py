@@ -420,12 +420,113 @@
 #     print("You can't divide by zero!")
 
 
-try:
-    num = input("Enter the number")
+# try:
+#     num = input("Enter the number")
     
-    if num == "a":
-        raise ValueError("Inavlid name")
-    print(num) 
-except ValueError as e:
-    print(e)          
+#     if num == "a":
+#         raise ValueError("Inavlid name")
+#     print(num) 
+# except ValueError as e:
+#     print(e)          
      
+# class Profile:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age 
+
+# p1=Profile("gopal",23)
+# print(p1.age,p1.name)
+
+
+
+# inheritence
+# class Docter:
+#     def heal(self):
+#         print("i heal")
+#     def figth(self):
+#         print("i can fight")
+
+# class ninja:
+#     def fast(self):
+#         print("i can move fast")
+
+# class nimbele(Docter,ninja):
+#     def goo(self):
+#         print("i can move solvely")
+
+
+# p1=nimbele()
+
+# p1.fast()
+
+# lambda
+
+
+# gooo = lambda x : x*2
+
+# print(gooo(3))
+
+# print('Lambdas Exercise')
+
+# def f(x): return x + 5
+# #f = ...#insert equivalent lambda here
+# print(f(2))
+
+# multi = lambda x: x+5
+
+# # print(multi(2))
+
+# print('Lambdas Exercise')
+
+ 
+# def strip_spaces(str):
+#    return ''.join(str.split(' '))
+# #write equivalent lambda and insert Lambda here
+# # strip_spaces1 =lambda x : x.replace(" ","")
+# strip_spaces1 =lambda x : "".join(x.split() ) 
+# print(strip_spaces('Monty Pythons Flying Circus')) 
+# print(strip_spaces1('Monty Pythons Flying Circus')) 
+
+# print('Lambdas Exercise')
+ 
+# def join_list_no_duplicates(list_a,list_b):
+#    return list(set(list_a + list_b))
+# list_a = [1,2,3,4]
+# list_b = [3,4,5,6,7]
+# #write lambda below 
+# join_list_no_duplicates1 = lambda list_a,list_b : list(set(list_a+list_b))
+# print(join_list_no_duplicates(list_a,list_b))
+# print(join_list_no_duplicates1(list_a,list_b))
+
+# print('Lambdas Exercise')
+
+# #Complete the function so it returns a function
+# def create_quad_func(a,b,c):
+#     '''return function f(x) = ax^2 + bx + c'''
+#     return lambda x: a*x**2 + b*x + c
+# f = create_quad_func(2,4,6)
+# g = create_quad_func(2,4,6)
+# print(f(2))
+# print(g(2))
+
+# signups = ['MPF104', 'MPF20', 'MPF2', 'MPF17', 'MPF3', 'MPF45']
+# print(sorted(signups)) # Lexicographic sort
+# #write sorting by integer
+# print(sorted(signups,key=lambda x:int(x[3:])) )# Integer sort
+
+
+# comprohention
+
+# numbers = [1,2,3,4,5,6,7,8,9]
+
+# # ne_list = [(num,x) for num in "Prajwal" for x in range(4)]
+# # print(ne_list)
+# new_list= [num for num in numbers if num % 2 == 1]
+# print(new_list)
+
+# Randomness
+
+import random as rand
+
+friends_list =  ['John', 'Eric', 'Michael', 'Terry', 'Graham']
+print(rand.choice(friends_list))
