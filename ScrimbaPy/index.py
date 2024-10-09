@@ -528,5 +528,6 @@
 
 import random as rand
 
-friends_list =  ['John', 'Eric', 'Michael', 'Terry', 'Graham']
-print(rand.choice(friends_list))
+
+looo = ["2","Prajwwal",78,"Praj"]
+print(rand.randrange(2,30,3))
