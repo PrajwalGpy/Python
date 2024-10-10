@@ -526,8 +526,72 @@
 
 # Randomness
 
-import random as rand
+# import random as rand
 
 
-looo = ["2","Prajwwal",78,"Praj"]
-print(rand.randrange(2,30,3))
+# looo = ["2","Prajwwal",78,"Praj"]
+# print(rand.randrange(2,30,3))
+# print('Project - Math Tutor')
+# import random as rand
+
+# canwer = []
+# uanwer = []
+# quetiontrcter= []
+# ranswers = []
+# wanswers =[]
+# total = 0
+# intpu = int(input("Enter how many qutions you whant : "))
+# for i in range(intpu):
+#     number1 = rand.randint(1,10)
+#     number2 = rand.randint(1,10)
+#     canwer.append(number1*number2)
+#     anwer = int(input(f"{number1}X{number2}="))
+#     quetiontrcter.append(f"{number1}X{number2}=") 
+#     uanwer.append(anwer)
+    
+   
+# print("Thank you for playing")
+# for i in range(len(uanwer)):
+#     if canwer[i] == uanwer[i]:
+#         total += 1
+#     ranswers.append(f"{quetiontrcter[i]}{canwer[i]}") 
+#     wanswers.append(f"{quetiontrcter[i]}{uanwer[i]}") 
+
+# def percentage():
+#     part = total
+#     whole = len(uanwer) 
+
+#     return (part/whole)*100       
+# print(f"the total correct answer is={total} out of {len(uanwer)}")
+# print(f"Coorect Aswer : {"  ".join(ranswers)}")
+# print(f"Your aswer : {"  ".join(wanswers)}")
+
+# print(f"the percentage you scored is = {percentage()}")
+
+import random as rand 
+
+ball =""
+total_amount = 1000
+number = rand.randrange(1,11)
+if number>=6:
+    ball = "green"
+else:    
+    ball = "red"    
+
+while  total_amount >= 500 :
+    print("If you what end the game and whant to withdrow press e")
+    uamount= input("Enter how much you whant to enter :")
+
+    if ball == "green":
+        uamount += int(uamount)
+        total_amount += int(uamount)
+        print(f"you won  amount is dubles {uamount } total is {total_amount}")
+
+    elif  uamount == "e":
+        break   
+    else:
+        total_amount -=  int(uamount) 
+        print(f"you lose  amount is mised :{uamount } total is {total_amount}")
+    
+print(ball)
+print(f"you  total is {total_amount}")
