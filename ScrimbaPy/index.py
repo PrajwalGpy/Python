@@ -568,30 +568,30 @@
 
 # print(f"the percentage you scored is = {percentage()}")
 
-import random as rand 
+# import random as rand 
 
-ball =""
-total_amount = 1000
-number = rand.randrange(1,11)
-if number>=6:
-    ball = "green"
-else:    
-    ball = "red"    
+# ball =""
+# total_amount = 1000
+# number = rand.randrange(1,11)
+# if number>=6:
+#     ball = "green"
+# else:    
+#     ball = "red"    
 
-while  total_amount >= 500 :
-    print("If you what end the game and whant to withdrow press e")
-    uamount= input("Enter how much you whant to enter :")
+# while  total_amount >= 500 :
+#     print("If you what end the game and whant to withdrow press e")
+#     uamount= input("Enter how much you whant to enter :")
 
-    if ball == "green":
-        uamount += int(uamount)
-        total_amount += int(uamount)
-        print(f"you won  amount is dubles {uamount } total is {total_amount}")
+#     if ball == "green":
+#         uamount += int(uamount)
+#         total_amount += int(uamount)
+#         print(f"you won  amount is dubles {uamount } total is {total_amount}")
 
-    elif  uamount == "e":
-        break   
-    else:
-        total_amount -=  int(uamount) 
-        print(f"you lose  amount is mised :{uamount } total is {total_amount}")
+#     elif  uamount == "e":
+#         break   
+#     else:
+#         total_amount -=  int(uamount) 
+#         print(f"you lose  amount is mised :{uamount } total is {total_amount}")
     
-print(ball)
-print(f"you  total is {total_amount}")
+# print(ball)
+# print(f"you  total is {total_amount}")
